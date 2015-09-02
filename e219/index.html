@@ -1,0 +1,16 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+    <form>
+        <input type="text" name="item"><br>
+        <input type="button" value="Add Item" onclick="todoList.addItem(form.item.value)"><br>
+        <input type="button" value="Show List" onclick="todoList.showList()"><br>
+        <input type="button" value="Delete Item" onclick="todoList.removeItem(form.item.value)">
+    </form>
+<div id="display">
+</div>
+<script src="list.js"></script>
+</body>
+</html>
