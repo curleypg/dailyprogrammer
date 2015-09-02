@@ -1,0 +1,1 @@
+Calculates the number of times it take to manipulate an integer to become a palindrome. Repeated steps include reversing the number and adding it to the orginal number. Number of steps are calculated until the final result is a palindrome.

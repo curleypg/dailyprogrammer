@@ -1,0 +1,1 @@
+Javascript solution to testing the order of characters in a string. If the characters in the string are arranged in alphabetical order, it returns IN ORDER. If at least one letter is out of alphabetical order, it returns NOT IN ORDER.
