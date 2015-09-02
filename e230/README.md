@@ -1,0 +1,1 @@
+This is another node.js code that makes an HTTP GET request for JSON. It parses the JSON, finds the target value, and then maps the location using the keys in the JSON object. 'find.js' is a simple node module with the findString logic.
