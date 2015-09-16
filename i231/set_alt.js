@@ -4,28 +4,28 @@ var findSet = function(x,y,z,i){
     var num = "123";
     var fill = "OHF";
     if (i>3){
-        console.log(z);
+        return z;
     }
     else {
         if (x[i] == y[i]) {
-            z += x[i];
+            c = x[i];
         }
         else {
             switch(i) {
-                case 0: z += shape.replace(x[0],"").replace(y[0],"");
+                case 0: c = shape.replace(x[0],"").replace(y[0],"");
                     break;
-                case 1: z += color.replace(x[1],"").replace(y[1],"");
+                case 1: c = color.replace(x[1],"").replace(y[1],"");
                     break;
-                case 2: z += num.replace(x[2],"").replace(y[2],"");
+                case 2: c = num.replace(x[2],"").replace(y[2],"");
                     break;
-                default: z += fill.replace(x[3],"").replace(y[3],"");
+                default: c = fill.replace(x[3],"").replace(y[3],"");
             }
         }
-    i++;
-    findSet(x,y,z,i);
+        i++;
+        return findSet(x,y,(z + c),i);
     }
 }
 
 var a = "SP3F";
 var b = "SR1H";
-findSet(a,b,"",0);
+console.log(findSet(a,b,"",0));
